@@ -1,4 +1,4 @@
 module.exports = {
-    CharFreq: require('./charFreq')
+    CharFreq: require('./char-freq')
 };
   

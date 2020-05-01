@@ -5,7 +5,7 @@ describe('LinkedList', () => {
   it('is help available', () => {
     const l = new LinkedList();
     assert(l.help());
-    assert.notDeepEqual(l.help(), {});
+    assert.notDeepEqual(l.help(), '');
   });
 
   it('starts empty', () => {

@@ -24,16 +24,18 @@ class LinkedList {
   }
   
   help(){
-    return {
-      "help()" : "give you all actions available",
-      "isEmpty()" : "checking if list is empty",
-      "add(value, index)" : "adding new elements to the list with or without index",
-      "get(index)" : "get only value of given index",
-      "getNode(index)" : "get Node of given index",
-      "del(index)" : "delete node of given index",
-      "delNode(node)" : "delete node",
-      "forEach" : "Iterate through the linked list"
-    }
+    return `      
+      -------------------------------------------------------------------
+      help() - give you all actions available
+      isEmpty() - checking if list is empty
+      add(value, index) - adding new elements to the list with or without index
+      get(index) - get only value of given index
+      getNode(index) - get Node of given index
+      del(index) - delete node of given index
+      delNode(node) - delete node
+      forEach - Iterate through the linked list
+      -------------------------------------------------------------------
+    `;
   }
   
   isEmpty() {

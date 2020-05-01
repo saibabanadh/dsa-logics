@@ -1,4 +1,4 @@
 module.exports = {
-    LinkedList: require('./linkedlist')
+    LinkedList: require('./linked-list')
 };
   
