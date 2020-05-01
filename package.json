@@ -1,0 +1,36 @@
+{
+  "name": "dsa-logics",
+  "version": "0.0.1",
+  "description": "data structure and algorithms logics for NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R spec --recursive test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saibabanadh/dsa-logics.git"
+  },
+  "keywords": [
+    "data structures & algorithms",
+    "logics",
+    "javascript",
+    "algorithms",
+    "javascript algorithms",
+    "javascript logics",
+    "sorting algorithms",
+    "string algorithms",
+    "array algorithms",
+    "computer science algorithms",
+    "algorithm logics",
+    "data structure logics"
+  ],
+  "author": "Sai Baba Nadh Konda <saibabanadh@gmail.com> (http://github.com/saibabanadh)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/saibabanadh/dsa-logics/issues"
+  },
+  "homepage": "https://github.com/saibabanadh/dsa-logics#readme",
+  "devDependencies": {
+    "mocha": "^7.1.2"
+  }
+}
