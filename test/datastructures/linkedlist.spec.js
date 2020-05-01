@@ -5,7 +5,6 @@ describe('LinkedList', () => {
   it('is help available', () => {
     const l = new LinkedList();
     assert(l.help());
-    console.log(l.help())
     assert.notDeepEqual(l.help(), {});
   });
 

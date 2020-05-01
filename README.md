@@ -20,11 +20,15 @@ Once you've installed the library, you can start using it in your project like t
 
 **Using Linked List**
 
-`const { Algorithms, DataStructures } = require('dsa-logics');`
-`let linkedlist = new DataStructures.LinkedList();`
-`check available options using linkedlist.help()`
+```js
 
-`linkedlist.add(10);`
-`linkedlist.add(20,1);`
+const { Algorithms, DataStructures } = require('dsa-logics');
+let linkedlist = new DataStructures.LinkedList();
+check available options using linkedlist.help()
 
-`console.log(linkedlist.length) // prints - 2`
+linkedlist.add(10);
+linkedlist.add(20,1);
+
+console.log(linkedlist.length) // prints - 2
+
+```
