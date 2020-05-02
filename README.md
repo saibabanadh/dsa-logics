@@ -1,15 +1,20 @@
 # DSA Logics
 Data Structure and Algorithms Logics for NodeJS
 
-## Available Libraries
+## Available Methods
 
 * DataStructures
     - LinkedList
 * Strings
     - HammingDistance
     - LavenshteinDistance
+* Sortings
+    - BubbleSort
+    - MergeSort
+    - QuickSort
 * Logics
     - CharFreq
+    - NthFibonocci
 
 ## Installation
 
@@ -19,7 +24,7 @@ To install the algorithms for use in your project run:
 
 or if you don't have Yarn installed, run:
 
-`npm install dsa-logics`
+`npm i dsa-logics`
 
 Once you've installed the library, you can start using it in your project like this:
 
@@ -68,6 +73,22 @@ console.log("Lavenshtein Distance:", d2) // Lavenshtein Distance: 6
 
 ```
 
+**Using Strings**
+
+```js
+
+const { Sortings } = require('dsa-logics');
+
+const s1 = Sortings.BubbleSort([32,54,12,7,23]);
+const s2 = Sortings.MergeSort([32,54,12,7,23]);
+const s3 = Sortings.QuickSort([32,54,12,7,23]);
+
+console.log("Bubble Sort:", s1) // Bubble Sort: [ 7, 12, 23, 32, 54 ]
+console.log("Merge Sort :", s2) // Merge Sort : [ 7, 12, 23, 32, 54 ]
+console.log("Quick Sort :", s3) // Quick Sort : [ 7, 12, 23, 32, 54 ]
+
+```
+
 **Using Logics**
 
 ```js
@@ -95,5 +116,20 @@ console.log("Result2:", result2)
     //     mostRepeatedFreq: [ 4, 2 ],
     //     repeatedCount: 2 
     // }
+
+```
+
+```js
+
+const { Logics } = require('dsa-logics');
+
+const result1 = Logics.NthFibonocci(5);
+const result2 = Logics.NthFibonocci(9);
+const result3 = Logics.NthFibonocci(32);
+
+console.log("Result1:", result1); // 5
+console.log("Result2:", result2); // 34
+console.log("Result3:", result3); // 3524578
+    
 
 ```

@@ -1,6 +1,6 @@
 {
   "name": "dsa-logics",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "data structure and algorithms logics for NodeJS",
   "main": "index.js",
   "scripts": {
@@ -11,8 +11,13 @@
     "url": "git+https://github.com/saibabanadh/dsa-logics.git"
   },
   "keywords": [
-    "data structures & algorithms",
+    "dsa",
+    "ds",
+    "datastructures",
+    "dsa-logic",
+    "dsa-logics",
     "logics",
+    "data structures & algorithms",
     "javascript",
     "algorithms",
     "javascript algorithms",
@@ -31,6 +36,10 @@
   },
   "homepage": "https://github.com/saibabanadh/dsa-logics#readme",
   "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-delete-file": "^1.0.2",
+    "gulp-minify": "^3.1.0",
     "mocha": "^7.1.2"
   }
 }
