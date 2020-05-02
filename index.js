@@ -1,10 +1,10 @@
 const library = {
-    Algorithms: require('./src/algorithms'),
-    DataStructures: require('./src/datastructures'),
-    Logics: require('./src/logics'),
-    Maths: require('./src/maths'),
-    Sortings: require('./src/sortings'),
-    Strings: require('./src/strings')
+    Algorithms: require('./lib/algorithms'),
+    DataStructures: require('./lib/datastructures'),
+    Logics: require('./lib/logics'),
+    Maths: require('./lib/maths'),
+    Sortings: require('./lib/sortings'),
+    Strings: require('./lib/strings')
 };
   
 module.exports = library;

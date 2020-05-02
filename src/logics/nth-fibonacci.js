@@ -13,9 +13,9 @@ const nthFibonocci = (n) => {
     let prev = 1;
     let current = prevprev + prev;
     for(let i=3; i <= n+1; i++){
+        current = prevprev + prev;
         prevprev = prev;
         prev = current;
-        current = prevprev + prev;
     }
     return current;
 }

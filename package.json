@@ -1,6 +1,6 @@
 {
   "name": "dsa-logics",
-  "version": "0.1.0",
+  "version": "0.1.5",
   "description": "data structure and algorithms logics for NodeJS",
   "main": "index.js",
   "scripts": {

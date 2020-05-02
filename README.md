@@ -123,12 +123,12 @@ console.log("Result2:", result2)
 
 const { Logics } = require('dsa-logics');
 
-const result1 = Logics.NthFibonocci(5);
-const result2 = Logics.NthFibonocci(9);
-const result3 = Logics.NthFibonocci(32);
+const result1 = Logics.NthFibonocci(7);
+const result2 = Logics.NthFibonocci(11);
+const result3 = Logics.NthFibonocci(33);
 
-console.log("Result1:", result1); // 5
-console.log("Result2:", result2); // 34
+console.log("Result1:", result1); // 13
+console.log("Result2:", result2); // 89
 console.log("Result3:", result3); // 3524578
     
 
