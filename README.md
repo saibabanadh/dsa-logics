@@ -15,6 +15,7 @@ Data Structure and Algorithms Logics for NodeJS
 * Logics
     - CharFreq
     - NthFibonocci
+    - FindSumInTwo
 
 ## Installation
 
@@ -131,5 +132,16 @@ console.log("Result1:", result1); // 13
 console.log("Result2:", result2); // 89
 console.log("Result3:", result3); // 3524578
     
+
+```
+```js
+
+const { Logics } = require('dsa-logics');
+
+const isSumExists1 = Logics.FindSumInTwo([1,2,3,4,5,6,7,8,9], [2,3,4,5], 10);
+console.log("isSumExists1:", isSumExists1); // true
+
+const isSumExists2 = Logics.FindSumInTwo([2,1], [4,2], 10);
+console.log("isSumExists2:", isSumExists2); // false
 
 ```
