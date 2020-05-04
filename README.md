@@ -16,6 +16,7 @@ Data Structure and Algorithms Logics for NodeJS
     - CharFreq
     - NthFibonocci
     - FindSumInTwo
+    - FindLongestSubArrayOfSum
 
 ## Installation
 
@@ -143,5 +144,21 @@ console.log("isSumExists1:", isSumExists1); // true
 
 const isSumExists2 = Logics.FindSumInTwo([2,1], [4,2], 10);
 console.log("isSumExists2:", isSumExists2); // false
+
+```
+```js
+
+const { Logics } = require('dsa-logics');
+
+// Ex: Logics.FindLongestSubArrayOfSum(yourArray, desiredSum);
+
+const longSubArr1 = Logics.FindLongestSubArrayOfSum([1,2,3,4,5,6,7,8,9], 15);
+console.log("longSubArr1:", longSubArr1); // [ 1,2, 3, 4, 5]
+
+const longSubArr2 = Logics.FindLongestSubArrayOfSum([1,2,3,1,4,5,0,0,0,6,7,8,9], 15);
+console.log("longSubArr2:", longSubArr2); // [ 2, 3, 1, 4, 5, 0, 0, 0 ]
+
+const longSubArr3 = Logics.FindLongestSubArrayOfSum([10,21,2,13], 12);
+console.log("longSubArr3:", longSubArr3); // []
 
 ```
