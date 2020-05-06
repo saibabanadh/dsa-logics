@@ -1,4 +1,5 @@
 module.exports = {
-    LinkedList: require('./linked-list')
+    LinkedList: require('./linked-list'),
+    BinarySearchTree: require('./binary-search-tree')
 };
   
