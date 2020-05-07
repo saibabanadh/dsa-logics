@@ -90,29 +90,15 @@ bst.search(18); // returns false
 
 ```
 
-**Using Strings**
+**Using Algorithms**
 
 ```js
 
-const { Strings } = require('dsa-logics');
+const { Algorithms } = require('dsa-logics');
 
-const d1 = Strings.HammingDistance("saibabanadh","saibabanath");
-const d2 = Strings.LavenshteinDistance("000000","111111");
-
-console.log("Hamming Distance:", d1) // Hamming Distance: 1
-console.log("Lavenshtein Distance:", d2) // Lavenshtein Distance: 6
-
-```
-
-**Using Strings**
-
-```js
-
-const { Sortings } = require('dsa-logics');
-
-const s1 = Sortings.BubbleSort([32,54,12,7,23]);
-const s2 = Sortings.MergeSort([32,54,12,7,23]);
-const s3 = Sortings.QuickSort([32,54,12,7,23]);
+const s1 = Algorithms.bubbleSort([32,54,12,7,23]);
+const s2 = Algorithms.mergeSort([32,54,12,7,23]);
+const s3 = Algorithms.quickSort([32,54,12,7,23]);
 
 console.log("Bubble Sort:", s1) // Bubble Sort: [ 7, 12, 23, 32, 54 ]
 console.log("Merge Sort :", s2) // Merge Sort : [ 7, 12, 23, 32, 54 ]
@@ -126,8 +112,20 @@ console.log("Quick Sort :", s3) // Quick Sort : [ 7, 12, 23, 32, 54 ]
 
 const { Logics } = require('dsa-logics');
 
-const result1 = Logics.CharFreq("GeeksGeeks");
-const result2 = Logics.CharFreq("abbacbddbddee");
+const d1 = Logics.hammingDistance("saibabanadh","saibabanath");
+const d2 = Logics.lavenshteinDistance("000000","111111");
+
+console.log("Hamming Distance:", d1) // Hamming Distance: 1
+console.log("Lavenshtein Distance:", d2) // Lavenshtein Distance: 6
+
+```
+
+```js
+
+const { Logics } = require('dsa-logics');
+
+const result1 = Logics.charFreq("GeeksGeeks");
+const result2 = Logics.charFreq("abbacbddbddee");
 
 console.log("Result1:", result1) 
     // { 
@@ -154,9 +152,9 @@ console.log("Result2:", result2)
 
 const { Logics } = require('dsa-logics');
 
-const result1 = Logics.NthFibonocci(7);
-const result2 = Logics.NthFibonocci(11);
-const result3 = Logics.NthFibonocci(33);
+const result1 = Logics.nthFibonocci(7);
+const result2 = Logics.nthFibonocci(11);
+const result3 = Logics.nthFibonocci(33);
 
 console.log("Result1:", result1); // 13
 console.log("Result2:", result2); // 89
@@ -164,30 +162,32 @@ console.log("Result3:", result3); // 3524578
     
 
 ```
+
 ```js
 
 const { Logics } = require('dsa-logics');
 
-const isSumExists1 = Logics.FindSumInTwo([1,2,3,4,5,6,7,8,9], [2,3,4,5], 10);
+const isSumExists1 = Logics.findSumInTwo([1,2,3,4,5,6,7,8,9], [2,3,4,5], 10);
 console.log("isSumExists1:", isSumExists1); // true
 
-const isSumExists2 = Logics.FindSumInTwo([2,1], [4,2], 10);
+const isSumExists2 = Logics.findSumInTwo([2,1], [4,2], 10);
 console.log("isSumExists2:", isSumExists2); // false
 
 ```
+
 ```js
 
 const { Logics } = require('dsa-logics');
 
-// Ex: Logics.FindLongestSubArrayOfSum(yourArray, desiredSum);
+// Ex: Logics.findLongestSubArrayOfSum(yourArray, desiredSum);
 
-const longSubArr1 = Logics.FindLongestSubArrayOfSum([1,2,3,4,5,6,7,8,9], 15);
+const longSubArr1 = Logics.findLongestSubArrayOfSum([1,2,3,4,5,6,7,8,9], 15);
 console.log("longSubArr1:", longSubArr1); // [ 1,2, 3, 4, 5]
 
-const longSubArr2 = Logics.FindLongestSubArrayOfSum([1,2,3,1,4,5,0,0,0,6,7,8,9], 15);
+const longSubArr2 = Logics.findLongestSubArrayOfSum([1,2,3,1,4,5,0,0,0,6,7,8,9], 15);
 console.log("longSubArr2:", longSubArr2); // [ 2, 3, 1, 4, 5, 0, 0, 0 ]
 
-const longSubArr3 = Logics.FindLongestSubArrayOfSum([10,21,2,13], 12);
+const longSubArr3 = Logics.findLongestSubArrayOfSum([10,21,2,13], 12);
 console.log("longSubArr3:", longSubArr3); // []
 
 ```
