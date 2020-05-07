@@ -1,4 +1,4 @@
-const findLongestSubArrayOfSum = require('../../index').Logics.FindLongestSubArrayOfSum;
+const findLongestSubArrayOfSum = require('../../index').Logics.findLongestSubArrayOfSum;
 const assert = require('assert');
 
 describe('Find Longest Sub Array Of Given Sum', () => {

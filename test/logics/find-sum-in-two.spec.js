@@ -1,4 +1,4 @@
-const  findSumInTwo = require('../../index').Logics.FindSumInTwo;
+const  findSumInTwo = require('../../index').Logics.findSumInTwo;
 const assert = require('assert');
 
 describe('Find Sum in Two Arrays', () => {
