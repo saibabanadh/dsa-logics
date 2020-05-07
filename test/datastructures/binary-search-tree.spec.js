@@ -27,6 +27,7 @@ describe('Binary Search Tree', () => {
 
     it('remove element from tree', () => {
         let bst = new BinarySearchTree();
+        assert.equal(bst.remove(100), false);
         bst.bulkInsert([30,21,42,14,25,34]);
         assert.equal(bst.root.value, 30);
         assert.equal(bst.root.left.value, 21);
@@ -35,6 +36,12 @@ describe('Binary Search Tree', () => {
         bst.remove(21);
         assert.equal(bst.root.left.value, 25);
         assert.equal(bst.length, 5);
+        bst.remove(14);
+        bst.remove(25);
+        bst.remove(30);
+        bst.remove(42);
+        bst.remove(35);
+        assert.equal(bst.length, 1);
     });
 
     it('print full tree', () => {
@@ -46,8 +53,11 @@ describe('Binary Search Tree', () => {
 
     it('search element in tree', () => {
         let bst = new BinarySearchTree();
+        assert.equal(bst.search(21), false);
         bst.bulkInsert([30,21,42,14,25,34]);
         assert.equal(bst.search(21), true);
+        assert.equal(bst.search(14), true);
+        assert.equal(bst.search(42), true);
         assert.equal(bst.search(11), false);
     });
 
