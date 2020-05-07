@@ -5,3 +5,4 @@ notes.md
 .gitignore
 package-lock.json
 gulpfile.js
+coverage

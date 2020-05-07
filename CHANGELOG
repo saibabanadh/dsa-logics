@@ -1,5 +1,9 @@
 CHANGELOG
 =========
+1.5.1 (2020-05-07)
+* Restructured
+* Naming Conventions
+
 1.2.1 (2020-05-06)
 * DataStructures
     - LinkedList
