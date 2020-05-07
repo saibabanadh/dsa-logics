@@ -1,4 +1,4 @@
-const nthFibonocci = require('../../index').Logics.NthFibonocci;
+const nthFibonocci = require('../../index').Logics.nthFibonocci;
 const assert = require('assert');
 
 describe('Nth Fibonocci', () => {

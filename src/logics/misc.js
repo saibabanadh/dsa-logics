@@ -2,7 +2,7 @@
  * Return Fibonocci at given Index
  */
 
-const nthFibonocci = (n) => {
+exports.nthFibonocci = (n) => {
     if(typeof(n) !== "number"){
         throw new Error("Invalid value of n");
     }
@@ -18,6 +18,8 @@ const nthFibonocci = (n) => {
         prev = current;
     }
     return current;
-}
+};
 
-module.exports = nthFibonocci;
+exports.balancedParenthesis = () => {
+
+};
