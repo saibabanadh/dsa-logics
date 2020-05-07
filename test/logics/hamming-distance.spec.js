@@ -1,4 +1,4 @@
-const hammingDistance = require('../../index').Strings.HammingDistance;
+const hammingDistance = require('../../index').Logics.hammingDistance;
 const assert = require('assert');
 
 describe('Hamming Distance', () => {

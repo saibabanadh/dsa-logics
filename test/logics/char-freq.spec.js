@@ -1,4 +1,4 @@
-const charFrequency = require('../../index').Logics.CharFreq;
+const charFrequency = require('../../index').Logics.charFreq;
 const assert = require('assert');
 
 describe('Character Frequency', () => {

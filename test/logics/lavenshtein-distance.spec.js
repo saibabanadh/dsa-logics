@@ -1,4 +1,4 @@
-const lavenshteinDistance = require('../../index').Strings.LavenshteinDistance;
+const lavenshteinDistance = require('../../index').Logics.lavenshteinDistance;
 const assert = require('assert');
 
 describe('Levenshtein Distance', () => {
