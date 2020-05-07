@@ -1,4 +1,4 @@
-const mergeSort = require('../../index').Sortings.MergeSort;
+const mergeSort = require('../../index').Algorithms.mergeSort;
 const assert = require('assert');
 
 describe('Merge Sort', () => {

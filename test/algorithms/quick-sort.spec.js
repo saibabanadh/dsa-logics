@@ -1,4 +1,4 @@
-const quickSort = require('../../index').Sortings.QuickSort;
+const quickSort = require('../../index').Algorithms.quickSort;
 const assert = require('assert');
 
 describe('Quick Sort', () => {

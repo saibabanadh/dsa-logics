@@ -1,4 +1,4 @@
-const bubbleSort = require('../../index').Sortings.BubbleSort;
+const bubbleSort = require('../../index').Algorithms.bubbleSort;
 const assert = require('assert');
 
 describe('Bubble Sort', () => {
