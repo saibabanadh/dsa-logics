@@ -113,8 +113,9 @@ exports.checkCharFreq = (str) => {
 
 
 exports.encodeChars = (chars) => {
-  if(!chars) throw new Error();
-  if(chars.length == 0 ) return 'Invalid String';
+  if(!chars || chars.length == 0 ) {
+    return 'Invalid String';
+  }
   let prevChar = '0';
   let counter = 0;
   let encodedStr = '';
@@ -139,8 +140,9 @@ exports.encodeChars = (chars) => {
 };
 
 exports.decodeChars = (chars) => {
-  if(!chars) throw new Error();
-  if(chars.length == 0 ) return 'Invalid String';
+  if(!chars || chars.length == 0 ) {
+    return 'Invalid String';
+  }
   const digits = {'1':true,'2':true,'3':true,'4':true,'5':true,'6':true,'7':true,'8':true,'9':true};
   let counter = '';
   let decodedStr = '';

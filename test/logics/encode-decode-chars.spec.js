@@ -3,13 +3,12 @@ const  decodeChars = require('../../index').Logics.decodeChars;
 const assert = require('assert');
 
 describe('Encode & Decode Character String', () => {
-    it('raises an error if the input is null', ()=>{
-        assert.throws(() => {
-            encodeChars();
-        });
-        assert.throws(() => {
-            decodeChars();
-        });
+    it('return invalid string if the input is empty or null', ()=>{
+        let res1 = encodeChars('');
+        let res2 = decodeChars('');
+
+        assert.equal(res1, 'Invalid String');
+        assert.equal(res2, 'Invalid String');
     });
     it('encodeChars - success scenarios', ()=>{
         const inputs = [

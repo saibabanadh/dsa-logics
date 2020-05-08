@@ -34,10 +34,16 @@ const buildTree = (root, curr_index=0, index=false, delimiter='-') => {
   new_box = [line1.join(''), line2.join('')];
   let l_line,r_line;
   for(let i=0; i < Math.max(l_box.length, r_box.length); i++){
-    if(i < l_box.length) l_line = l_box[i];
-    else l_line = ' '.repeat(l_box_width);
-    if(i < r_box.length) r_line = r_box[i];
-    else r_line = ' '.repeat(r_box_width);
+    if(i < l_box.length){
+        l_line = l_box[i];
+    }else {
+        l_line = ' '.repeat(l_box_width);
+    }
+    if(i < r_box.length){
+        r_line = r_box[i];
+    }else {
+        r_line = ' '.repeat(r_box_width);
+    }
     new_box.push(l_line + ' '.repeat(gap_size) + r_line);
   }
   return [new_box, new_box[0].length, new_root_start, new_root_end];
@@ -99,7 +105,7 @@ class BinarySearchTree{
               currentNode = currentNode.left;
           }else if(value > currentNode.value){
               currentNode = currentNode.right;
-          }else if(value === currentNode.value){
+          }else { // (value === currentNode.value)
               return true;
           }
       }
@@ -118,7 +124,7 @@ class BinarySearchTree{
           }else if(value > currentNode.value){
               parentNode = currentNode;
               currentNode = currentNode.right;
-          }else if( value === currentNode.value){
+          }else { //(value === currentNode.value)
               //matched so delete
               
               if(currentNode.right === null){ // Option1: No right chhild
