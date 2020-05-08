@@ -197,7 +197,7 @@ console.log("longSubArr3:", longSubArr3); // []
 const { Logics } = require('dsa-logics');
 
 const result1 = Logics.encodeChars('aaabbcddee');
-const result2 = Logics.decodeChars('3a2b1c2d2e);
+const result2 = Logics.decodeChars('3a2b1c2d2e');
 
 console.log("Result1:", result1); // 3a2b1c2d2e
 console.log("Result2:", result2); // aaabbcddee
