@@ -1,5 +1,10 @@
 CHANGELOG
 =========
+1.5.5 (2020-05-07)
+* Logics
+    - encodeChars
+    - decodeChars
+
 1.5.1 (2020-05-07)
 * Restructured
 * Naming Conventions
