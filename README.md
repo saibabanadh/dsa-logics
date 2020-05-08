@@ -191,3 +191,16 @@ const longSubArr3 = Logics.findLongestSubArrayOfSum([10,21,2,13], 12);
 console.log("longSubArr3:", longSubArr3); // []
 
 ```
+
+```js
+
+const { Logics } = require('dsa-logics');
+
+const result1 = Logics.encodeChars('aaabbcddee');
+const result2 = Logics.decodeChars('3a2b1c2d2e);
+
+console.log("Result1:", result1); // 3a2b1c2d2e
+console.log("Result2:", result2); // aaabbcddee
+    
+
+```

@@ -113,11 +113,50 @@ exports.checkCharFreq = (str) => {
 
 
 exports.encodeChars = (chars) => {
-
+  if(!chars) throw new Error();
+  if(chars.length == 0 ) return 'Invalid String';
+  let prevChar = '0';
+  let counter = 0;
+  let encodedStr = '';
+  chars = chars.replace(/ /g, '');
+  chars = chars.split('');
+  for(let i=0; i < chars.length; i++){
+    if(chars[i] == prevChar){
+      counter += 1;
+    }else{
+      if(prevChar == '0'){
+        prevChar = chars[i];
+        counter = 1;
+      }else{
+        encodedStr += counter.toString() + prevChar;
+        prevChar = chars[i];
+        counter = 1;
+      }
+    }
+  }
+  encodedStr += counter.toString() + prevChar;
+  return encodedStr;
 };
 
 exports.decodeChars = (chars) => {
-
+  if(!chars) throw new Error();
+  if(chars.length == 0 ) return 'Invalid String';
+  const digits = {'1':true,'2':true,'3':true,'4':true,'5':true,'6':true,'7':true,'8':true,'9':true};
+  let counter = '';
+  let decodedStr = '';
+  chars = chars.replace(/ /g, '');
+  chars = chars.split('');
+  for(let i=0; i<chars.length;i++){
+    if(chars[i] in digits){
+      counter += chars[i];
+    }else{
+      decodedStr += (chars[i]).toString().repeat(parseInt(counter));
+      counter = '';
+    }
+  }
+  return decodedStr;
 };
+
+
 
 
