@@ -11,13 +11,14 @@ exports.isPairExists = arrayLogics.isPairExists;
 exports.isTripletExists = arrayLogics.isTripletExists;
 exports.unionArrays = arrayLogics.unionArrays;
 exports.intersectArrays = arrayLogics.intersectArrays;
+exports.findMaxSumOfSubArray = arrayLogics.findMaxSumOfSubArray;
 
 // STRINGS
 exports.hammingDistance = stringLogics.hammingDistance;
-exports.lavenshteinDistance  = stringLogics.levenshteinDistance;
+exports.lavenshteinDistance = stringLogics.levenshteinDistance;
 exports.charFreq = stringLogics.checkCharFreq;
-exports.encodeChars  = stringLogics.encodeChars;
-exports.decodeChars  = stringLogics.decodeChars;
+exports.encodeChars = stringLogics.encodeChars;
+exports.decodeChars = stringLogics.decodeChars;
 
 // MISC
 exports.nthFibonocci = miscLogics.nthFibonocci;
